@@ -18,8 +18,9 @@ class _SignInState extends State<SignIn> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('assets/images/nautical.jpg'),
+            Image.asset('assets/images/icon.jpg'),
             Container(
+              margin: EdgeInsets.all(8),
               child: TextField(
                 decoration: InputDecoration(
                   labelText: "Email Address",
@@ -27,6 +28,7 @@ class _SignInState extends State<SignIn> {
               ),
             ),
             Container(
+              margin: EdgeInsets.all(8),
               child: TextField(
                 decoration: InputDecoration(
                   labelText: "Password",
@@ -43,7 +45,7 @@ class _SignInState extends State<SignIn> {
                     child: RaisedButton(
                       onPressed: randomFunc,
                       child: new Text('Submit'),
-                      color: Theme.of(context).accentColor,
+                      color: Theme.of(context).buttonColor,
                       shape: new RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(10.0)),
                     ),
@@ -57,7 +59,7 @@ class _SignInState extends State<SignIn> {
                           MaterialPageRoute(builder: (context) => SignUp()),
                         );
                       },
-                      color: Theme.of(context).accentColor,
+                      color: Theme.of(context).buttonColor,
                       shape: new RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(10.0)),
                       child: 
